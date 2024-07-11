@@ -89,11 +89,11 @@ def switchplayer():
         currentplayer="X"
 
 def computer(board):
-    while currentPlayer == "O":
+    while currentplayer == "O":
         position = random.randint(0, 8)
         if board[position] == "-":
             board[position] = "O"
-            switchPlayer()
+            switchplayer()
 while gamerunning:
     printboard(board)
     playerinput(board)
